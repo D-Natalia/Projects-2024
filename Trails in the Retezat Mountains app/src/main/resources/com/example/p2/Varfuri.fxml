@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="10"
+      fx:controller="Controller.TraseeRetezatController">
+        <Label text="Alege un vârf introducând numărul său:" />
+        <HBox spacing="10" alignment="CENTER">
+                <VBox alignment="CENTER">
+                        <Label text="1." />
+                        <ImageView fx:id="imageVfRetezat" fitHeight="400" fitWidth="500" />
+                        <Label text="Vf. Retezat" />
+                </VBox>
+                <VBox alignment="CENTER">
+                        <Label text="2." />
+                        <ImageView fx:id="imageVfMare" fitHeight="400" fitWidth="500" />
+                        <Label text="Vf. Mare" />
+                </VBox>
+                <VBox alignment="CENTER">
+                        <Label text="3." />
+                        <ImageView fx:id="imageVfPeleaga" fitHeight="400" fitWidth="500" />
+                        <Label text="Vf. Peleaga" />
+                </VBox>
+        </HBox>
+        <TextField fx:id="numarVarfField" promptText="Introdu numărul vârfului" />
+        <HBox spacing="10" alignment="CENTER">
+        <Button  text="Afișează traseele" onAction="#afiseazaTraseele"  />
+        <Button  text="Scrie o recenzie" onAction="#afiseazaFormularRecenzie"/>
+                <Button text="Iesi din aplicatie" onAction="#iesiDinAplicatie"/>
+        </HBox>
+        <ScrollPane fitToWidth="true">
+                <VBox fx:id="contentVBox" alignment="TOP_LEFT" spacing="10">
+
+                <VBox fx:id="traseeVBox" alignment="TOP_LEFT" spacing="10">
+                     <Label fx:id="detailsLabel" text="Trasee disponibile vor apărea aici:" />
+                </VBox>
+                <VBox fx:id="recenzieVBox" alignment="CENTER" spacing="10">
+                </VBox>
+                </VBox>
+        </ScrollPane>
+
+
+
+    </VBox>
+

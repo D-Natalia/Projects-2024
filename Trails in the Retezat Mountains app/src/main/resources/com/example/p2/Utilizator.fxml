@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<VBox alignment="TOP_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller.UtilizatorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Numele:"/>
+    <TextField fx:id="numeField" />
+    <Label text="Alege nivelul de experienta:"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="incepatorButton" text="Începător" />
+        <Button fx:id="intermediarButton" text="Intermediar" />
+        <Button fx:id="avansatButton" text="Avansat" />
+    </HBox>
+
+    <Button fx:id="createButton" text="Creeare cont"  onAction="#UtilizatorButton"/>
+    <Label fx:id="detailsLabel" text="Detalii utilizator"/>
+</VBox>
+
+
